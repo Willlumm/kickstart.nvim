@@ -166,6 +166,9 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- For running external commands when running nvim in gitbash.
+vim.o.shellcmdflag = '-c'
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -985,6 +988,7 @@ require('lazy').setup({
     },
   },
 })
+require 'nvim-treesitter.install'.compilers = { "zig" }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
