@@ -169,6 +169,9 @@ vim.o.confirm = true
 -- For running external commands when running nvim in gitbash.
 vim.o.shellcmdflag = '-c'
 
+-- Autocomplete with `/` instead of `\`.
+vim.o.shellslash = true
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
